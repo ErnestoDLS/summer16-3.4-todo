@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <section>
-      <header>
-        <h1>todos</h1>
-        <input placeholder="What needs to be done?" autofocus="">
-      </header>
-      <section>
-        
+    <form class="form" data-js="form">
+      <section class="todo-top">
+        <header>
+          <h1>todos</h1>
+          <input class="new-toDo" placeholder="What needs to be done?" autofocus="">
+        </header>
+        <main class="main-todo">
+          <input class="toggle-all" type="checkbox" data-js="input--here">
+          <label for="toggle-all">Mark all as complete</label>
+          <ul class="todo-list" data-js="todo-list"></ul>
+        </main>
+        <footer class="footer"></footer>
+          <button class="clear--completed" type="button" name="button">Clear Completed</button>
       </section>
-    </section>
+      <div class="info">
+        <p>Double-click to edit a todo</p>
 
+      </div>
+    </form>
   </body>
   <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
   <script src="javascripts/main.js" charset="utf-8"></script>
+  <footer>Double-click to edit a todo</footer>
 </html>
